@@ -1,0 +1,767 @@
+body {
+    background-color: #f8f8f8;
+    text-align: left;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+strong { font-weight: 700; }
+.green {  
+
+    color:#15A745;
+     }
+.red {  
+
+    color:#FF7C09;
+     }
+.light-green {  
+
+    color:#80D462;
+     }
+a:hover { 
+    text-decoration: none; 
+      }
+
+.header {
+    opacity:1.0;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    background: transparent url(../img/pattern.jpg) left top repeat;
+    border-top: 4px solid #FF7C09;;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
+}
+.logo_info {
+   margin-left: -140px;
+    
+}
+.logo_info h1 {
+    padding-left: 50px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 10px;
+    color:#15A745;
+    position: absolute;
+}
+.logo h1 {
+    padding-left: 45px;
+    padding-top: 15px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 10px;
+    font-weight: 300;
+}
+.logo a img { 
+    height:36px;
+    width:36px;
+    margin-top: 10px;
+    position: absolute;
+}
+.logo h1 a { color: #555;
+            font-size: 32px; 
+}
+
+.links {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.links .register-option {
+    display: inline-block;
+    margin-right:30px;
+    margin-top:10px;
+    color:#80D462;
+}
+.links .register-option:hover {
+    background-color:#FF7C09;
+   color:#ffffff;
+   font-weight: bold;
+   border-radius: 5px;
+   padding:5px;
+   text-transform: none;
+    transition: all 0.2s linear;
+   
+}
+.links .login-option {
+    display: inline-block;
+    margin-right:30px;
+    margin-top:10px;
+    color:#80D462;
+}
+.links .login-option:hover {
+    background-color:#FF7C09;
+   color:#ffffff;
+   font-weight: bold;
+   border-radius: 5px;
+   padding:5px;
+   text-transform: none;
+   transition: all 0.2s linear;
+
+   
+}
+/*signup form */
+
+
+/* end of sign up style*/
+
+/* ----- iPhone ----- */
+
+.left_side {
+    text-align:;
+    margin-left: 150px;
+    margin-top: 100px;
+    border:1px solid #f5f5f5;
+    background-color:;
+    border-top-left-radius:50px;
+    border-bottom-right-radius: 50px;
+    padding:5px;    
+
+}
+
+.left_side h1{
+      color:#FF7F0E;
+      font-weight: bold;
+      font-family:;
+      margin-left: 10px;
+}
+.left_side p{
+      color:#;
+      font-size: 1.5em;
+      text-align:left;
+}
+
+/* ----- Registration Form ----- */
+.register form {
+    padding: 20px 50px 40px 30px;
+    background: #f8f8f8 url(../img/pattern.jpg) center top repeat;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    text-align: center;
+    margin-top: 100px;
+    width:400px;
+    opacity: 1.6;
+    
+}
+
+/*.register form {
+    padding: 20px 50px 40px 50px;
+    background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    text-align: center;*/
+}
+
+.register form h2 {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    background: url(../img/pencil.png) 20px 6px no-repeat;
+    border-bottom: 2px dotted #bbb;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.register form h2 {
+             margin-left:200;
+                  }
+.register form input {
+    width: 95%;
+    height: 15px;
+    margin:-1px 0px;
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #888;
+    font-size: 16px;
+}
+
+.register form input:focus {
+    border: 1px solid #;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.register form label {
+    margin: 7px 0 10px 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.register form label span {
+    font-style: italic;
+}
+
+.register form input:-moz-placeholder { color: #aaa; }
+.register form input:-ms-input-placeholder { color: #aaa; }
+.register form input::-webkit-input-placeholder { color: #aaa; }
+
+.register form button {
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    margin-top: 25px;
+    padding: 0;
+    background: #FF7C09;;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 0;
+    -moz-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+.register form button:hover {
+    -moz-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+    -webkit-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+    box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+}
+
+.register form button:active {
+    -moz-box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+    box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+}
+/*---- banner ----*/
+.banner-info{
+    padding: 9em 0 12em;
+}
+.banner-info h2{
+    font-weight: 700;
+    font-size: 3.5em;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 70%;
+    display: inline-block;
+    line-height: 1.3em;
+    text-shadow: 0 3px 5px rgba(0,0,0,.1);
+}
+.banner-info span{
+    width:20%;
+    height:3px;
+    background:#80D462;
+    display:inline-block;
+}
+.banner-info p{
+    color:#FF7C09;
+    font-weight:400;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    font-family: 'Open Sans', sans-serif;
+    margin: 1em auto;
+    width: 50%;
+}
+ .text-center{
+
+    text-align: center;
+}
+.button .btn{
+
+    margin-top: -320px;
+    margin-left: 500px;
+    background-color: #FF7C09;
+    color:#ffffff;
+    font-weight:bold;
+    font-size: 1.5em;
+    color: #FFF;
+    padding:10px;
+    -moz-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.button .btn:hover{
+    font-size: 1.5em;
+    background-color: #FFF;
+    padding:10px;
+    color:#FF7C09;
+    padding:10px;
+    transition: all 0.6s;
+}
+    
+}
+/*---- services ----*/
+
+/* ----- Media queries ----- */
+
+@media (max-width: 1200px) {
+
+    .register form h2 { background: url(../img/pencil.png) 20px 3px no-repeat; }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+    .register form h2 { background: none; }
+
+}
+
+@media (max-width: 767px) {
+
+    body { padding-left: 0; padding-right: 0; }
+
+    .logo, .links { text-align: center; }
+
+    .links { padding-bottom: 5px; }
+
+    .logo h1 { padding-left: 0; }
+
+    .links a.home { margin-left: 0; }
+
+    .links a.blog { margin-right: 0; }
+
+    .register-container { padding-left: 20px; padding-right: 20px; }
+
+    .register form h2 { background: none; }
+
+    .iphone img { display: none; }
+
+}
+
+@media (max-width: 480px) {
+
+    .register form button { width: 97%; }
+
+}
+/*login form styles starts here*/
+@import http://fonts.googl0eapis.com/css?family=Raleway;
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+.main  {
+opacity: 2.5;
+width:700px;
+margin-top:100px;
+margin-left: 500px; 
+font-family:raleway;
+background-color:#f3f3f3;
+-moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+box-shadow: 0 5px 5px 0 rgba(5,0,0,.3);
+}
+span {
+color:black;
+}
+
+}
+.login h3 i {
+font-family:"Lato",sans-serif;
+text-align:center;
+margin-left:30px;
+padding:15px;
+font-weight:700;
+}
+hr {
+border:0;
+border-bottom:1px solid #ccc;
+margin:5px -40px;
+margin-bottom:10px
+}
+.login {
+    margin:100px auto;
+    background-color: white;
+    width:300px;
+    border:2px solid #f1f1f1;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding:10px 40px 25px;
+    opacity: 5.8;
+    float: left;
+/*opacity:10;
+width:300px;
+float:left;
+background-color:#F4F4F4;
+border-radius:10px;
+font-family:raleway;
+padding:10px 40px 25px;
+margin:100px auto;
+border:2px solid #ccc;
+margin-top: 10px;
+*/
+}
+.login form input {
+    width: 95%;
+    height: px;
+    padding:10px;
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #888;
+    font-size: 16px;
+}
+.login input[type=submit] {
+width:105%;
+background-color:#0044cc;
+color:#fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:5px;
+margin-top:10px;
+border:1px solid #fff;
+}
+input[type=fb_btn_login] {
+width:100%;
+background-color:blue;
+color:#fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:5px;
+margin-top:15px;
+border:1px solid #fff;
+}
+.footer 
+    padding: 0px 40px
+}
+.signup_option{
+ color:blue;
+}
+/*login form styles ends here*/
+/*registering new user */
+.signup_form{
+
+    margin:100px auto;
+    background-color: white;
+    width:400px;
+    border:2px solid #f1f1f1;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding:10px;
+    opacity: 0.8;
+}
+.signup_form form input{
+    margin-top:1px;
+    width:80%;
+    
+
+}
+.signup_form form label{
+font-weight: bold;
+    }
+    .signup_form strong{
+         padding:5px;
+         height:10px;
+    }
+
+/*logout option */
+.register_logout {
+ margin-top: 10px;
+ float: right;
+ 
+}
+ .logout_option a:hover{
+  color:#FF7C09;
+ 
+ }
+ .logout_option{
+    margin-left: 10px; 
+ }
+ .welcome_option{
+  color:#80D462;
+  padding-right: 5px;
+ }
+
+
+/*end */
+/*parsley styles starts here*/
+  body{
+
+
+
+  }
+            input.parsley-success
+            {
+              color: #468847 !important;
+              background-color: #DFF0D8 !important;
+              border: 1px solid #D6E9C6 !important;
+            }
+            input.parsley-error
+            {
+              color: #B94A48 !important;
+              background-color: #F2DEDE !important;
+              border: 1px solid #EED3D7 !important;
+            }
+                       }
+            
+            .parsley-error-list
+            {
+                font-size: 11px;
+                margin: 2px;
+                list-style:none; 
+                color:red;
+            }
+            
+            ul.parsley-error-list li
+            {
+                line-height: 13px;
+                color:red;
+                list-style: none;
+            }
+            
+            /* just pushing the button over to the middle 
+
+/*ends here */
+/*admin css ends here*/
+
+
+
+/*body {
+    background: #f8f8f8;
+    text-align: left;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+strong { font-weight: 700; }
+.red { color: #eb4141; }
+a:hover { text-decoration: none; }
+
+.header {
+    margin: 0 auto;
+    padding-bottom: 5px;
+    background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+    border-top: 3px solid #eb4141;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+}
+
+.logo h1 {
+    padding-left: 45px;
+    padding-top: 15px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 10px;
+    font-weight: 300;
+}
+.logo a img { 
+    height:36px;
+    width:36px;
+    margin-top: 10px;
+    position: absolute;
+}
+.logo h1 a { color: #555;
+            font-size: 32px; 
+}
+
+.links {
+    text-align: right;
+}
+
+.links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0 20px;
+}
+
+.links a.home { background: url(../img/home.png) center center no-repeat; }
+.links a.blog { background: url(../img/blog.png) center center no-repeat; margin-right: 50px; }
+
+
+.register-container {
+    margin-top: 50px;
+}
+
+/* ----- iPhone ----- */
+/*
+.iphone {
+    text-align: right;
+    opacity: 0px
+}
+
+.iphone img { margin-right: 10px; }
+
+/* ----- Registration Form ----- */
+
+/*.register form {
+    padding: 20px 50px 40px 50px;
+    background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    text-align: center;
+    opacity: 0.5px
+}
+
+.register form h2 {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    background: url(../img/pencil.png) 70px 6px no-repeat;
+    border-bottom: 2px dotted #bbb;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.register form input {
+    width: 95%;
+    height: 30px;
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #888;
+    font-size: 16px;
+}
+
+.register form input:focus {
+    border: 1px solid #ccc;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.register form label {
+    margin: 7px 0 10px 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.register form label span {
+    font-style: italic;
+}
+
+.register form input:-moz-placeholder { color: #aaa; }
+.register form input:-ms-input-placeholder { color: #aaa; }
+.register form input::-webkit-input-placeholder { color: #aaa; }
+
+.register form button {
+    cursor: pointer;
+    width: 60%;
+    height: 42px;
+    margin-top: 25px;
+    padding: 0;
+    background: #C49C38;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 0;
+    -moz-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+.register form button:hover {
+    -moz-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+    -webkit-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+    box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+}
+
+.register form button:active {
+    -moz-box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+    box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+}
+
+
+/* ----- Media queries ----- */
+
+/*@media (max-width: 1200px) {
+
+    .register form h2 { background: url(../img/pencil.png) 20px 6px no-repeat; }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+    .register form h2 { background: none; }
+}
+
+    body { padding-left: 0; padding-right: 0; }
+
+    .logo, .links { text-align: center; }
+
+    .links { padding-bottom: 5px; }
+
+    .logo h1 { padding-left: 0; }
+
+    .links a.home { margin-left: 0; }
+
+    .links a.blog { margin-right: 0; }
+
+    .register-container { padding-left: 20px; padding-right: 20px; }
+
+    .register form h2 { background: none; }
+
+    .iphone img { display: none; }
+
+}
+
+@media (max-width: 480px) {
+
+    .register form button { width: 97%; }
+
+}
+*/
+
