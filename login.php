@@ -2,7 +2,7 @@
 <?php
 include('loginscript.php'); // Includes Login Script
 if(isset($_SESSION['login_user'])){
-  header("location: resources.php");
+  header("location:resources.php");
 }
 ?>
 <?php
@@ -10,6 +10,9 @@ require("layout/header.php");
 ?>
 <div class="main wow fadeInRight" data-wow-delay="0.5s">
             <div class="box login">
+               <div class="error_message">
+                 <span><?php echo $error; ?></span>
+                </div> 
                 <h3><i class="fa fa-group fa-2x"></h3></i>
                 <hr>
                <form action="" method="post" data-validate="parsley">

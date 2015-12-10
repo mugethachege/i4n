@@ -1,6 +1,7 @@
 <?php
 require('layout/header.php');
 require('layout/footer.php');
+
 ?>
 
 <div class="signup_form">

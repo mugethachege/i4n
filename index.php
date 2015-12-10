@@ -14,25 +14,6 @@ require("layout/header.php");
                    </div>
               </div>
          </div>
-    
-                    
-            <!--div class="register-container container">
-                <div class="row">
-                    <div class="iphone span5">
-                        <img src="assets/img/hall1.jpg" alt="">
-                    
-                   </div-->
-            
-                    
-
-            <!--div class="register-container container">
-                <div class="row">
-                    <div class="iphone span5">
-                        <img src="assets/img/hall1.jpg" alt="">
-                    </div>
-                    
-            </div>
-        </div-->
          <!-- Javascript -->
         <script src="assets/js/jquery-1.8.2.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
