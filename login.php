@@ -33,41 +33,7 @@ require("layout/header.php");
                 </form>
             </div>
         </div>
-<!-- Form Mixin-->
-<!-- Input Mixin-->
-<!-- Button Mixin-->
-<!-- Pen Title-->
-<!--div class="pen-title">
-</div-->
-<!-- Form Module-->
-<!--div class="module form-module">
-  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-    <div class="tooltip">Click Me</div>
-  </div>
-  <div class="form">
-    <form method="post" action="">
-    <h2>Login to your account</h2>
-    <form>
-      <input type="text" placeholder="Username"/>
-      <input type="password" placeholder="Password"/>
-      <button type="submit" name="btn-login">Login</button>
-      <h1>Click the pencil to signup</h1>
-    </form>
-  </div>
-  <!--div class="form">
-    <form method="post" action="">
-    <h2>Create an account</h2>
-    <form>
-      <input type="text" placeholder="Username"/>
-      <input type="password" placeholder="Password"/>
-      <input type="email" placeholder="Email Address"/>
-      <input type="tel" placeholder="Phone Number"/>
-      <button type="submit" name="btn-login">Register</button>
-    </form-->
-  <!--/div>
-  <div class="cta"><a href="">Forgot your password?</a></div>
-</div-->
-<?php
+        <?php
         require("layout/footer.php");
         ?>
  <!-- Javascript -->

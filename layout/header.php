@@ -12,7 +12,8 @@
         <!-- CSS -->
         <link rel='stylesheet' href='assets/css/css.css'>
         <link rel='stylesheet' href='assets/css/cssmin.css'>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="css/lg.css" />
          <link rel="stylesheet" href="assets/css/reset.css">

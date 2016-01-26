@@ -61,19 +61,3 @@ require('layout/footer.php');
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/scripts.js"></script>
-<!--div class="register span6">
-                    <form action="" method="post">
-                        <h2>REGISTER TO <span class="red"><strong>VFMS</strong></span></h2>
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="firstname" placeholder="enter your first name...">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="enter your first name...">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="choose a username...">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="enter your email...">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="choose a password...">
-                        <button type="submit">REGISTER</button>
-                    </form>
-</div>

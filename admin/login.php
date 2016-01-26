@@ -47,7 +47,7 @@ if($result) {
 			
 			
 			session_write_close();
-			header("location:admin.php?");
+			header("location:admin.php");
 			exit();
 			}
 		

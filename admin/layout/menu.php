@@ -3,14 +3,14 @@
     <head>
         <title>VFMS</title>
 <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="vendors/fullcalendar/fullcalendar.css" rel="stylesheet" media="screen">
-        <link href="assets/styles.css" rel="stylesheet" media="screen">
-        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-        <link href="assets/styles.css" rel="stylesheet" media="screen">
-        <link href="assets/DT_bootstrap.css" rel="stylesheet" media="screen">
-
+        <link href="assets/css/styles.css" rel="stylesheet" media="screen">
+        <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <link href="assets/css/styles.css" rel="stylesheet" media="screen">
+        <link href="assets/css/DT_bootstrap.css" rel="stylesheet" media="screen">
         <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="icon" type="image/ico" href="assets/img/fav-logo.png"/>
     </head>
     
     <body>
@@ -21,11 +21,11 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">Admin Panel</a>
+                    <a class="brand" href="">Admin Panel</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <li class="dropdown">
-                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Vincent Gabriel <i class="caret"></i>
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i>admin <i class="caret"></i>
 
                                 </a>
                                 <ul class="dropdown-menu">
@@ -65,17 +65,17 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">SEO Settings</a>
+                                        <a href="#"></a>
                                     </li>
                                     <li>
-                                        <a href="#">Other Link</a>
+                                        <a href="#"></a>
                                     </li>
                                     <li class="divider"></li>
                                     <li>
-                                        <a href="#">Other Link</a>
+                                        <a href="#"></a>
                                     </li>
                                     <li>
-                                        <a href="#">Other Link</a>
+                                        <a href="#"></a>
                                     </li>
                                 </ul>
                             </li>
@@ -108,7 +108,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a tabindex="-1" href="viewusers.php">User List</a>
+                                        <a tabindex="-1" href="viewuser.php">User List</a>
                                     </li>
                                     <li>
                                         <a tabindex="-1" href="#">Search</a>

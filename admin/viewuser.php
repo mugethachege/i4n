@@ -15,7 +15,7 @@ require("layout/menu.php");
                             <div class="block-content collapse in">
                                 
                                 <div class="span12">
-                                    <?php
+<?php
      @$db = mysql_pconnect("localhost", "root", "hunsy");
           //checking connecting
         if (!$db)
@@ -39,6 +39,7 @@ require("layout/menu.php");
                             <th>id</th>
                             <th>Username</th>
                             <th>Email</th>
+                            <td id="add_user"><a href="new_user.php">[Add User]<a/>&nbsp;&nbsp;&nbsp;<td id="edit_user"><a href="edit_user.php?id='.$id.'">[Edit]<a/>&nbsp;&nbsp;&nbsp;<a href="delete_user.php?id='.$id.'">[Delete]<a/></td>';
                           </tr>
                         </thead>
                         <tbody>
@@ -59,12 +60,12 @@ require("layout/menu.php");
         </div> 
  
 
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /block -->
-                    </div>
-                </div>
+</div>
+    </div>
+        </div>
+        <!-- /block -->
+        </div>
+        </div>
             </div>
             <hr>
             <footer>
