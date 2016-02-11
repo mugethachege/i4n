@@ -47,7 +47,7 @@
 						$query="insert into users(username, email, password) values('$username','$email','$password')";
 						$rs=mysql_query($query)or die("Could Not Perform the Query");
 						
-					echo '<br><br><br><div class=head1>Hi '.$username.' You have succesifully been signed up, please <a href="login.php">login</a></div>';
+					echo '<br><br><br><div class=head1>Hi '.$username.' You have succesifully been signed up, please <a href="index.php">login</a></div>';
 					?>
 		  </div>
 	  </body>

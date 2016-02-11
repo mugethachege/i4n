@@ -1,146 +1,112 @@
 <?php
-require("layout/menu.php");
 include_once 'include/config.php';
- if(isset($_POST['submit']))
+
+// delete condition
+if(isset($_GET['id']))
 {
- // variables for input data
- $name = $_POST['name'];
- $category = $_POST['category'];
- // variables for input data
-
- // sql query for inserting data into database
- $sql_query = "INSERT INTO resources(name,category) VALUES('$name','$category')";
- // sql query for inserting data into database
- 
- // sql query execution function
- if(mysql_query($sql_query))
- {
-  ?>
- <script type="text/javascript">
-  alert('resource added successifully');
-  </script>
-  <?php
- }
- else
- {
-  ?>
-  <script type="text/javascript">
-  alert('error occured while inserting your data');
-  </script>
-  <?php
- }
- // sql query execution function
+ $sql_query="DELETE FROM rooms WHERE room_id=".$_GET['id'];
+ mysql_query($sql_query);
+ header("Location: $_SERVER[PHP_SELF]");
 }
+// delete condition
 ?>
-                     <div class="span9" id="content">
-                    <div class="row-fluid">
-                        <!-- block -->
-                        <div class="block">
-                            <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">Add Resources</div>
-                                <div class="pull-right"><span class="badge badge-warning">View More</span>
-                                </div>
-                              
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-    </section>
-     <!-- Main content --> 
-     <!-- /.tab-pane -->
-     <div class="insert_course_outer">
-          <div class="insert-course" id="settings">
-                <form  action="" method="POST" class="form-horizontal insert-course_inner">
-                      <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+<script type="text/javascript">
+function edit_id(id)
+{
+ if(confirm('Sure to edit ?'))
+ {
+  window.location.href='edit_room.php?edit_id='+id;
+ }
+}
+function id(id)
+{
+ if(confirm('Sure to Delete this venue ?'))
+ {
+  window.location.href='venues.php?id='+id;
+ }
+}
+</script>
+<?php
+  require('layout/sidebar.php')
+?>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Dashboard
+         </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active"> venues</li>
+          </ol>
+        </section>
 
-                        <div class="col-sm-8">
-                          <input type="text" class="form-control" name="name" placeholder="Course name here" required>
-                        </div>
-                      </div>
-                    
-                      <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Category</label>
-
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" name="category" placeholder="Choose category" required>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" name="submit" class="btn btn-danger">Add  <i class="fa fa-arrow-circle-right"></i></button>
-                        </div>
-                      </div>
-                </form>
-              </div>
-          </div>
-              <!-- /.tab-pane -->
-      <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
+        <!-- Main content -->
+        <section class="content">         
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Manage Venues</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <div class="btn-group">
+                      <button class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench"></i></button>
                     </div>
-                            
-                                <div class="span10">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /block -->
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <footer>
-                <p>&copy; VFMS 2015</p>
-            </footer>
-        </div>
-        <style>
-        #external-events {
-            float: left;
-            width: 150px;
-            padding: 0 10px;
-            border: 1px solid #ccc;
-            background: #eee;
-            text-align: left;
-            }
-            
-        #external-events h4 {
-            font-size: 16px;
-            margin-top: 0;
-            padding-top: 1em;
-            }
-            
-        .external-event { /* try to mimick the look of a real event */
-            margin: 10px 0;
-            padding: 2px 4px;
-            background: #3366CC;
-            color: #fff;
-            font-size: .85em;
-            cursor: pointer;
-            z-index: 99999999;
-            }
-            
-        #external-events p {
-            margin: 1.5em 0;
-            font-size: 11px;
-            color: #666;
-            }
-            
-        #external-events p input {
-            margin: 0;
-            vertical-align: middle;
-            }
+                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                      
+                
+                                      <table id="example" class="table table-striped table-bordered display">
+                                                      <thead class="table_header">
+                                                        <tr>
+                                                          <th>Room</th>
+                                                          <th>Building</th>
+                                                           <th>Status</th>
+                                                        </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                       <?php
+													   
+                                                          $sql_query="SELECT * FROM rooms";
+                                                          $result_set=mysql_query($sql_query);
+                                                          while($row=mysql_fetch_row($result_set))
+                                                         {
+                                                            ?>
+                                                         <tr class="replyandmark">
+                                                          <td id="room"><?php echo $row[1]; ?></td>
+                                                          <td  id="building"><?php echo $row[2]; ?></td>
+                                                          <td  id="status"><?php echo $row[3]; ?></td>
+                                                          
+                                                            
+                                                            
+                                                            <td align="center"><a href="javascript:edit_id('<?php echo $row[0]; ?>')"><button type="button" class="btn btn-block btn-success btn-xs"> <div class="fa fa-edit"></div> Edit</button></a></td>
+                                                            <td align="center"><a href="javascript:id('<?php echo $row[0]; ?>')"><button type="button" class="btn btn-block btn-danger btn-xs"><div class="fa  fa-trash-o"></div> Remove</button></a></td>
+                                                           <!-- <td align="center"><a href="javascript:mark_id('<?php echo $row[0]; ?>')"><button type="button" class="btn btn-block btn-success btn-xs" name="deny"> <div class="fa fa-folder-open"></div> R</button></a></td> -->
+                                                         
+                                                         </tr>
+                                                         <?php
+                                                              }
+                                                            ?>
+                                                      </tbody>
+                                                  </table>
+                </div><!-- ./box-body -->
+                
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
 
-        </style>
-        <!--/.fluid-container-->
-        <script src="vendors/jquery-1.9.1.min.js"></script>
-        <script src="vendors/jquery-ui-1.10.3.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendors/fullcalendar/fullcalendar.js"></script>
-        <script src="vendors/fullcalendar/gcal.js"></script>
-        <script src="assets/scripts.js"></script>
-        
-        
-    </body>
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
 
-</html>
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+                 </div>
+        <strong>Copyright &copy; 2015 <i class="fa fa-institution"></i> Evenues</a>.</strong> All rights reserved.
+      </footer>     
+      <?php
+        require('layout/footer.php')
+      ?>
